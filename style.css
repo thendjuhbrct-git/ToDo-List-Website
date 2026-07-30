@@ -1,0 +1,111 @@
+body {
+    background-color: #f6eee3;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #d1c7bd;
+    margin: 25px auto;
+}
+
+.title {
+    justify-content: center;
+    text-align: center;
+    font-family: "Leckerli One", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    max-width: 1400px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.description a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+.todo-items {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.todo-checkbox {
+    transform: scale(1.5);
+    margin: 10px;
+}
+
+.todo-checkbox:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.todo-text{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    padding: 10px 5px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s;
+    color: #333;
+}
+
+.todo-text::placeholder {
+    color: #aaa;
+}
+
+.todo-text:focus {
+    border-bottom-color: #4f46e5;
+}
+
+.todo-checkbox:checked + .todo-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-buttons button {
+    background-color: #e5dfd5;
+    color: #2c2925;
+    border: 1px solid #d1c7bd;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.floating-buttons button:hover {
+    background-color: #d4ccc0;
+    border-color: #b3a89d;
+    transform: translateY(-2px);
+}

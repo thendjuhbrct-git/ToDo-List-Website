@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="A really simple and basic To-Do list app">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="title">To Do List</h1>
+    <p class="description">
+        The goal of this site is to be as simple as possible: no accounts, no collection of personal data, no AI integration, no ads, no tracking or fingerprinting—it is <a href=https://github.com/thendjuhbrct-git/ToDo-List-Website target="_blank">open source</a> and was coded in a single day by an amateur developer in their bedroom to learn how to use JavaScript.
+    </p>
+    <hr>
+    <div id="todo-container">
+        <div class="todo-items">
+            <input type="checkbox" class="todo-checkbox" disabled>
+            <input type="text" class="todo-text" placeholder="Add a task...">
+        </div>
+    </div>
+    <div class="floating-buttons">
+        <button id="export-btn" title="Export a JSON">📤 Export</button>
+        <button id="import-btn" title="Import a JSON">📥 Import</button>
+        <input type="file" id="import-file" accept=".json" style="display: none;">
+    </div>
+</body>
